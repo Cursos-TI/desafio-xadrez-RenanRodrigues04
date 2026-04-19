@@ -7,8 +7,9 @@ int main(){
     
     //saída de apresentação do programa.
     printf("*** Movimentação de peças de xadrez ***\n\n");
-    printf("Movimento da peça Torre: (casa atual A1).\n");
     
+    //TORRE.
+    printf("Movimento da peça Torre: (casa atual A1).\n");
     
     //estrutura For para movimentar torre, torre (movtorre) recebe 0 e aumenta até 5, repetindo o código.
     for(int torre = 0; torre < 5; torre++){
@@ -41,9 +42,29 @@ int main(){
     } while (rainha < 8); 
     
     printf("Casa final (D2).\n\n"); //somente para ilustrar a casa final da Rainha.
+    
+    
+    //CAVALO.
+    int cavalo = 1, movcavalo;
+    
+    //Estrutura while repetindo uma vez, usado para rodar o "FOR" e imprimir o "printf".
+    while(cavalo <=1)
+    {
+        printf("Movimento da peça Cavalo: (casa atual C4).\n");
+        
+        for(movcavalo = 1; movcavalo <= 2; movcavalo++) //Estrutura FOR, repete o código duas vezes, simulando o movimento vertical do Cavalo.
+        {
+            printf("Cavalo para baixo.\n");
+        } 
+        cavalo++; //incrementa a variável uma unidade, causando o encerramento do loop externo.
+    } 
+    
+    //Última movimentação fora do loop, simulando o movimento horizontal do Cavalo.
+    printf("Cavalo à esquerda.\n");
+    
+    printf("Casa final (A3).\n"); //somente para ilustrar a casa final da Rainha.
 
-    
-    
+
     return 0;
     
 }
